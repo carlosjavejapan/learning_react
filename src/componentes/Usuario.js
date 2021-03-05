@@ -11,11 +11,13 @@ const  Usuario = () => {
     return (
         <div>
             <Titulo usuario = 'Carlos' />
-            <Titulo usuario = 'Akemi' color = 'pink' />
+            <Titulo usuario = 'Jorge' color = 'pink' />
             
             {/* si existe un pais muestra <p>Tu eres de {pais}</p> de lo contrario nada*/}
             {pais && <p>Tu eres de {pais}</p>}
             <Parrafo>Tu s amigos son:</Parrafo>
+            <Parrafo>usuario: carlos</Parrafo>
+            <Parrafo>password: 123</Parrafo>
             <List flex>
                 {amigos.map((persona, index) => {
                     return <li key={index}>{persona}</li>
